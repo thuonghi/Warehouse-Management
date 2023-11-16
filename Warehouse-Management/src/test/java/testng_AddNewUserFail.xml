@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserType" value="edge"></parameter>
+    <parameter name="webURL" value="http://54.169.237.138:81/"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="D:/POM/src/main/java/com/managesys">
+        <classes>
+            <class name="com.managesys.testcases.ManageUserPage_Add">
+                <methods>
+                    <include name="setUp"></include>
+                    <include name="signIn"></include>
+                    <include name="openAddNewUser"></include>
+                    <include name="addNewUserFail"></include>
+                    <exclude name="addNewUserSuccess"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
